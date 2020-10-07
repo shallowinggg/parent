@@ -58,10 +58,10 @@
          | General configuration
         -->
         <checkstyle.config>checkstyle/nacre-check.xml</checkstyle.config>
-        <clirr.comparisonVersion>31</clirr.comparisonVersion>
+        <clirr.comparisonVersion>1</clirr.comparisonVersion>
         <gcu.product>${project.name}</gcu.product>
         <html.javadocType>-html5</html.javadocType>
-        <impsortGroups>au,com,de,java,javassist,javax,lombok,mockit,net,ognl,org</impsortGroups>
+        <impsortGroups>*,javax,java</impsortGroups>
         <formatter.config>formatter/formatter.xml</formatter.config>
         <maven.min-version>3.2.5</maven.min-version>
         <module.name>io.github.shallowinggg.parent</module.name>
