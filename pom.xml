@@ -151,7 +151,7 @@
                     <version>${license.version}</version>
                     <configuration>
                         <quiet>true</quiet>
-                        <header>${project.basedir}/license.txt</header>
+                        <header>${project.basedir}/license-header.txt</header>
                         <excludes>
                             <exclude>**/*.properties</exclude>-->
                             <exclude>*.sh</exclude>
@@ -884,7 +884,7 @@
             <activation>
                 <file>
                     <!-- project.basedir is invalid in this location, use basedir -->
-                    <exists>${basedir}/license.txt</exists>
+                    <exists>license-header.txt</exists>
                 </file>
             </activation>
             <build>
