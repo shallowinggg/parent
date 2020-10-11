@@ -88,7 +88,7 @@
         <build-tools.version>1.2.4</build-tools.version>
         <checkstyle-core.version>8.36.1</checkstyle-core.version>
         <fluido.version>1.9</fluido.version>
-        <nacre.version>1.3.0-SNAPSHOT</nacre.version>
+        <nacre.version>1.3.0</nacre.version>
 
         <!--
          | Plugins versions
@@ -821,7 +821,6 @@
                                             <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
                                         </manifestEntries>
                                     </archive>
-                                    <additionalparam>-Xdoclint:-missing</additionalparam>
                                 </configuration>
                             </execution>
                         </executions>
@@ -905,7 +904,6 @@
                 </plugins>
             </build>
         </profile>
-
     </profiles>
 
 </project>
