@@ -33,7 +33,7 @@ if [ $TRAVIS_REPO_SLUG == "shallowinggg/parent" ] && [ $TRAVIS_PULL_REQUEST == "
   if [ $TRAVIS_JDK_VERSION == "openjdk8" ]; then
 
     # Deploy to sonatype
-    ./mvnw deploy -q --settings ./travis/settings.xml
+    mvn deploy -q --settings ./travis/settings.xml
     echo -e "Successfully deployed SNAPSHOT artifacts to Sonatype under Travis job ${TRAVIS_JOB_NUMBER}"
 
     # Deploy to site
